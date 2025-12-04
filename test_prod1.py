@@ -1,10 +1,10 @@
-from product import product_details
+from prod1 import product_details
 
 def test_product_details():
     expected_output = (
-        "Product Name : Laptop\n"
         "Product ID : P1001\n"
-        "Category : Electronics\n"
+        "Product Name : Laptop\n"
+        "Quantity : 10\n"
         "Price : 75000"
     )
-    assert product_details("Laptop", "P1001", "Electronics", 75000) == expected_output
+    assert product_details("P1001", "Laptop", "10", "75000") == expected_output
